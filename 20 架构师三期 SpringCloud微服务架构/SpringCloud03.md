@@ -430,8 +430,6 @@ Eureka Server通过自我保护模式来解决整个问题，当Server在短时�
 
 
 
-
-
 自我保护机制的触发条件：
 （当每分钟心跳次数( renewsLastMin ) 小于 numberOfRenewsPerMinThreshold 时，并且开启自动保护模式开关( eureka.server.enable-self-preservation = true ) 时，触发自我保护机制，不再自动过期租约。）
 numberOfRenewsPerMinThreshold = expectedNumberOfRenewsPerMin * 续租百分比( eureka.server.renewalPercentThreshold, 默认0.85 )
@@ -740,6 +738,14 @@ RestTemplate是Spring提供的同步HTTP网络客户端接口，它可以简化�
 第三个层次（Level 2）的 Web 服务使用不同的 HTTP 方法来进行不同的操作，并且使用 HTTP 状态码来表示不同的结果。如 HTTP GET 方法来获取资源，HTTP DELETE 方法来删除资源。
 第四个层次（Level 3）的 Web 服务使用 HATEOAS。在资源的表达中包含了链接信息。客户端可以根据链接来发现可以执行的动作。
 ```
+
+**git的restful api**
+
+https://developer.github.com/v3/
+
+
+
+
 
 ## 作业：
 
